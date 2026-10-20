@@ -1,0 +1,12 @@
+{
+  "name": "avito-ai/theme",
+  "description": "Тема Avito AI",
+  "type": "wordpress-theme",
+  "require": {
+    "php": ">=8.0",
+    "htmlburger/carbon-fields": "^3.6"
+  },
+  "config": {
+    "optimize-autoloader": true
+  }
+}

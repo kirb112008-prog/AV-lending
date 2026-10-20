@@ -1,0 +1,87 @@
+.sticky-demo {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  padding: 0 36px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #2b7bda, #1b2d6e);
+  box-shadow:
+    0 6px 18px rgba(43, 123, 218, 0.55),
+    0 0 28px rgba(81, 149, 227, 0.6);
+  animation:
+    sticky-demo-glow 2.6s ease-in-out infinite,
+    sticky-demo-shake 4s ease-in-out infinite;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.sticky-demo:hover {
+  transform: translateY(-2px);
+  animation-play-state: paused;
+  box-shadow:
+    0 10px 24px rgba(43, 123, 218, 0.7),
+    0 0 36px rgba(95, 165, 255, 0.85);
+}
+
+@keyframes sticky-demo-shake {
+  0%,
+  16%,
+  100% {
+    transform: translateX(0) rotate(0);
+  }
+
+  2% {
+    transform: translateX(-5px) rotate(-3deg);
+  }
+
+  4% {
+    transform: translateX(5px) rotate(3deg);
+  }
+
+  6% {
+    transform: translateX(-4px) rotate(-2deg);
+  }
+
+  8% {
+    transform: translateX(4px) rotate(2deg);
+  }
+
+  10% {
+    transform: translateX(-2px) rotate(-1deg);
+  }
+
+  12% {
+    transform: translateX(2px) rotate(1deg);
+  }
+}
+
+@keyframes sticky-demo-glow {
+  0%,
+  100% {
+    box-shadow:
+      0 6px 18px rgba(43, 123, 218, 0.45),
+      0 0 20px rgba(81, 149, 227, 0.45);
+  }
+
+  50% {
+    box-shadow:
+      0 8px 22px rgba(43, 123, 218, 0.7),
+      0 0 36px rgba(95, 165, 255, 0.85);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sticky-demo {
+    animation: none;
+  }
+}

@@ -1,0 +1,369 @@
+.qr {
+  min-height: 100vh;
+  background: #fff;
+  font-family: var(--font-main, 'Montserrat', sans-serif);
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+
+.qr *,
+.qr *::before,
+.qr *::after {
+  box-sizing: border-box;
+}
+
+.qr button,
+.qr input,
+.qr select {
+  font-family: inherit;
+}
+
+.qr-page {
+  position: relative;
+  width: 100%;
+  max-width: 390px;
+  height: 1616px;
+  margin: 0 auto;
+  background: #fff;
+  overflow: hidden;
+  color: #1e3263;
+}
+
+.qr-hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 300px;
+  border-radius: 0 0 28px 28px;
+  background: linear-gradient(153.43deg, #1b2d6e 0%, #2c4a85 60.4%, #3a5fa6 86.2%);
+  color: #fff;
+}
+
+.qr-hero__logo {
+  position: absolute;
+  top: 18px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.qr-hero__badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 181px;
+  height: 29px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.14);
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.qr-hero__title {
+  position: absolute;
+  top: 73px;
+  left: 20px;
+  margin: 0;
+  font-size: 30px;
+  line-height: 34.5px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+
+.qr-hero__title small {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.qr-hero__subtitle {
+  position: absolute;
+  top: 158.5px;
+  left: 20px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 24px;
+  color: #d6e0f5;
+  white-space: nowrap;
+}
+
+.qr-hero__cta {
+  position: absolute;
+  top: 208px;
+  left: 20px;
+  right: 20px;
+  height: 60px;
+  border: 0;
+  border-radius: 14px;
+  background: #fff;
+  color: #1e3263;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.qr-feature {
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  height: 78px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border: 1px solid #c9d7f0;
+  border-radius: 16px;
+  background: #eef3fc;
+}
+
+.qr-feature__icon {
+  flex: none;
+  width: 44px;
+  height: 44px;
+  margin-right: 15px;
+  display: block;
+}
+
+.qr-feature__text {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  color: #1e3263;
+}
+
+.qr-how {
+  position: absolute;
+  top: 635px;
+  left: 16px;
+  margin: 0;
+  font-size: 21px;
+  line-height: 28px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #0b1530;
+  white-space: nowrap;
+}
+
+.qr-how span {
+  color: #3b5aae;
+}
+
+.qr-video {
+  position: absolute;
+  top: 685px;
+  left: 16px;
+  right: 16px;
+  height: 201px;
+  padding-top: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  background: linear-gradient(161.4deg, #25407a 0%, #3a5a97 85%);
+  color: #fff;
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.qr-more {
+  position: absolute;
+  top: 1565px;
+  left: 0;
+  right: 0;
+  margin: 0;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  color: #4a5675;
+  white-space: nowrap;
+}
+
+.qr-more a {
+  color: #2f5597;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+.qr-lead {
+  position: absolute;
+  top: 922px;
+  left: 16px;
+  right: 16px;
+  height: 614.5px;
+  border-radius: 20px;
+  background: linear-gradient(144.1deg, #1b2d6e 0%, #33548f 83.3%);
+  color: #fff;
+}
+
+.qr-lead > * {
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  margin: 0;
+}
+
+.qr-lead__title {
+  top: 21.5px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.qr-lead__subtitle {
+  top: 53.5px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #d6e0f5;
+}
+
+.qr-field__label {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  color: #d6e0f5;
+}
+
+.qr-lead > .qr-field__control {
+  width: calc(100% - 36px);
+}
+
+.qr-field__control {
+  height: 56px;
+  width: 100%;
+  padding: 0 16px;
+  border: 0;
+  border-radius: 12px;
+  outline: none;
+  background: #fff;
+  color: #0b1530;
+  font-size: 16px;
+}
+
+.qr-field__control::placeholder {
+  color: #8a93a8;
+  opacity: 1;
+}
+
+.qr-field__control:focus-visible {
+  box-shadow: 0 0 0 2px #7fa2e6;
+}
+
+.qr-field__select-wrap {
+  height: 56px;
+}
+
+.qr-field__select {
+  appearance: none;
+  -webkit-appearance: none;
+  padding-right: 48px;
+  cursor: pointer;
+}
+
+.qr-field__select:invalid {
+  color: #8a93a8;
+}
+
+.qr-field__chevron {
+  position: absolute;
+  top: 22px;
+  right: 17px;
+  width: 12px;
+  height: 7px;
+  pointer-events: none;
+}
+
+.qr-lead__submit {
+  width: calc(100% - 36px);
+  height: 60px;
+  border: 0;
+  border-radius: 14px;
+  background: #fff;
+  color: #2e4d89;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.qr-lead__legal {
+  top: 560.5px;
+  font-size: 11px;
+  line-height: 11px;
+  text-align: center;
+  color: #fff;
+}
+
+.qr-lead__legal a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 1px;
+}
+
+.qr-lead__submit:disabled {
+  cursor: default;
+}
+
+.qr-lead__status {
+  top: 592px;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #d6e0f5;
+}
+
+.qr-lead__status--error {
+  color: #ffb4b4;
+}
+
+.qr-field__control:disabled {
+  background: #fff;
+  color: #0b1530;
+  -webkit-text-fill-color: #0b1530;
+  opacity: 1;
+  cursor: default;
+}
+
+.qr-field__select:disabled:invalid {
+  color: #8a93a8;
+  -webkit-text-fill-color: #8a93a8;
+}
+
+.qr-field__control:disabled::placeholder {
+  color: #8a93a8;
+  -webkit-text-fill-color: #8a93a8;
+}
+
+.qr-field__error {
+  position: absolute;
+  right: 18px;
+  left: 90px;
+  margin: 0;
+  font-size: 11px;
+  line-height: 18px;
+  font-weight: 600;
+  text-align: right;
+  color: #ffb4b4;
+}
+
+.qr-lead > .qr-field__error {
+  left: 90px;
+  right: 18px;
+}
+
+.qr-field__control[aria-invalid='true'] {
+  box-shadow: 0 0 0 2px #ff9a9a;
+}
